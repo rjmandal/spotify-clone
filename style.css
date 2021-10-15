@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Scheherazade+New&display=swap');
+
+body {
+    background-color: antiquewhite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+    position: sticky;
+    background-color: black;
+    color: #bfbf;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 0px 45px;
+}
+
+.brand img {
+    width: 45px;
+    margin-right: 15px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container {
+    min-height: 60vh;
+    background-color: black;
+    color: white;
+    font-family: 'Scheherazade New', serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 14px 34px;
+    background-image: url();
+}
+
+.bottom {
+    position: sticky;
+    height: 120px;
+    background-color: black;
+    color: white;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    margin-bottom: 15px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 84vw;
+    cursor: pointer;
+}
+
+.songItemContainer {
+    margin-top: 24px;
+}
+
+.songItem {
+    height: 63px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    align-items: center;
+    border-radius: 38px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.songItem img {
+    width: 55px;
+    margin: 0 10px;
+    border-radius: 38px;
+}
+
+.timeStamp {
+    margin:0 35px;
+    display: flex;
+    align-items: center;
+}
+
+.timeStamp i {
+    cursor: pointer;
+    margin-left: 10px;
+}
+.songInfo img{
+    width: 75px;
+    margin: 0 20px;
+    border-radius: 38px;
+}
+.songInfo{
+    font-family: 'Scheherazade New', serif;
+    position: absolute;
+    left: 0vw;
+    top: 20px;
+    display: flex;
+    align-items: center;
+}   
