@@ -34,17 +34,17 @@ let songs = [
     {
         songName: "Liar - Sandra",
         filePath: "songs/6.mp3",
-        coverPath: "cover/1.jpg"
+        coverPath: "cover/6.jpg"
     },
     {
         songName: "lavitating - Dua lipa",
         filePath: "songs/7.mp3",
-        coverPath: "cover/1.jpg"
+        coverPath: "cover/7.jpg"
     },
     {
         songName: "Treat you better -Shawn Mendes",
         filePath: "songs/8.mp3",
-        coverPath: "cover/1.jpg"
+        coverPath: "cover/8.jpg"
     },
 ]
 // *******************************************************************************************
