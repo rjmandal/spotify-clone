@@ -27,6 +27,8 @@ nav ul {
 
 nav ul li {
     padding: 0px 45px;
+    font-size: 1.2rem;
+    font-weight:700;
 }
 
 .brand img {
@@ -37,8 +39,8 @@ nav ul li {
 .brand {
     display: flex;
     align-items: center;
-    font-weight: bolder;
-    font-size: 1.3rem;
+    font-weight:bolder;
+    font-size: 1.8rem;
 }
 
 .container {
@@ -84,6 +86,7 @@ nav ul li {
 }
 
 .songItem {
+    /* width: 70%; */
     height: 63px;
     display: flex;
     background-color: white;
@@ -102,9 +105,8 @@ nav ul li {
 }
 
 .timeStamp {
-    margin:0 35px;
+    margin:0 10px 0px 35px;
     display: flex;
-    align-items: center;
 }
 
 .timeStamp i {
@@ -124,3 +126,16 @@ nav ul li {
     display: flex;
     align-items: center;
 }   
+
+.rotate {
+    animation: rotation 2s infinite linear;
+}
+
+ @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
