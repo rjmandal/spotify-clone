@@ -12,22 +12,22 @@ let songs = [
         coverPath: "cover/1.jpg"
     },
     {
-        songName: "liar - camila cabello",
+        songName: "Liar - camila cabello",
         filePath: "songs/2.mp3",
         coverPath: "cover/2.jpg"
     },
     {
-        songName: "bilionera - otilia",
+        songName: "Bilionera - otilia",
         filePath: "songs/3.mp3",
         coverPath: "cover/3.jpg"
     },
     {
-        songName: "let me down slowly - shawn Mendes",
+        songName: "Let me down slowly - shawn Mendes",
         filePath: "songs/4.mp3",
         coverPath: "cover/4.jpg"
     },
     {
-        songName: "there is nothing holding me back",
+        songName: "There is nothing holding me back",
         filePath: "songs/5.mp3",
         coverPath: "cover/5.jpg"
     },
@@ -37,9 +37,79 @@ let songs = [
         coverPath: "cover/6.jpg"
     },
     {
-        songName: "lavitating - Dua lipa",
+        songName: "Lavitating - Dua lipa",
         filePath: "songs/7.mp3",
         coverPath: "cover/7.jpg"
+    },
+    {
+        songName: "Treat you better -Shawn Mendes",
+        filePath: "songs/8.mp3",
+        coverPath: "cover/8.jpg"
+    },
+    {
+        songName: "Love nawantiti",
+        filePath: "songs/9.mp3",
+        coverPath: "cover/9.jpg"
+    },
+    {
+        songName: "See you again",
+        filePath: "songs/10.mp3",
+        coverPath: "cover/8.jpg"
+    },
+    {
+        songName: "Stay",
+        filePath: "songs/11.mp3",
+        coverPath: "cover/8.jpg"
+    },
+    {
+        songName: "Grind",
+        filePath: "songs/12.mp3",
+        coverPath: "cover/8.jpg"
+    },
+    {
+        songName: "Teri aankhon mein",
+        filePath: "songs/13.mp3",
+        coverPath: "cover/8.jpg"
+    },
+    {
+        songName: "Tum kun chale aate ho",
+        filePath: "songs/14.mp3",
+        coverPath: "cover/8.jpg"
+    },
+    {
+        songName: "Treat you better -Shawn Mendes",
+        filePath: "songs/14.mp3",
+        coverPath: "cover/8.jpg"
+    },
+    {
+        songName: "Treat you better -Shawn Mendes",
+        filePath: "songs/8.mp3",
+        coverPath: "cover/8.jpg"
+    },
+    {
+        songName: "Treat you better -Shawn Mendes",
+        filePath: "songs/8.mp3",
+        coverPath: "cover/8.jpg"
+    },
+    {
+        songName: "Treat you better -Shawn Mendes",
+        filePath: "songs/8.mp3",
+        coverPath: "cover/8.jpg"
+    },
+    {
+        songName: "Treat you better -Shawn Mendes",
+        filePath: "songs/8.mp3",
+        coverPath: "cover/8.jpg"
+    },
+    {
+        songName: "Treat you better -Shawn Mendes",
+        filePath: "songs/8.mp3",
+        coverPath: "cover/8.jpg"
+    },
+    {
+        songName: "Treat you better -Shawn Mendes",
+        filePath: "songs/8.mp3",
+        coverPath: "cover/8.jpg"
     },
     {
         songName: "Treat you better -Shawn Mendes",

@@ -45,15 +45,20 @@ nav ul li {
 
 .container {
     min-height: 60vh;
-    background-color: black;
+    background-color:black;
+    /* background-image: url(spotify.png); */
     color: white;
     font-family: 'Scheherazade New', serif;
     display: flex;
     margin: 23px auto;
-    width: 90%;
+    width: 95%;
     border-radius: 12px;
     padding: 14px 34px;
-    background-image: url();
+}
+.bottomImg{
+    height: 435px;
+    position: relative;
+    left: 240px;
 }
 
 .bottom {
@@ -83,6 +88,13 @@ nav ul li {
 
 .songItemContainer {
     margin-top: 24px;
+    overflow: scroll;
+    height: 300px;
+    scroll-behavior: smooth;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+    border: 10px solid white;
 }
 
 .songItem {
@@ -96,6 +108,7 @@ nav ul li {
     border-radius: 38px;
     font-size: large;
     font-weight: bold;
+
 }
 
 .songItem img {
