@@ -1,6 +1,7 @@
 // variable diclaration *********************************************
 let songIndex = 0;
 let audioElement = new Audio("songs/1.mp3");
+let cover = document.getElementById("cover");
 let masterPlay = document.getElementById("masterPlay");
 let masterSongName = document.getElementById("masterSongName");
 let myProgressBar = document.getElementById("myProgressBar");
@@ -129,10 +130,12 @@ masterPlay.addEventListener("click", () => {
         audioElement.play();
         masterPlay.classList.remove("fa-play-circle");
         masterPlay.classList.add("fa-pause-circle");
+        // cover.classList.add("rotate");
     } else {
         audioElement.pause();
         masterPlay.classList.remove("fa-pause-circle");
         masterPlay.classList.add("fa-play-circle");
+        // cover.classList.removeClass("rotate");
     }
 });
 

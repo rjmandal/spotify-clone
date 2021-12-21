@@ -30,6 +30,10 @@ nav ul li {
     font-size: 1.2rem;
     font-weight:700;
 }
+nav ul li a{
+    text-decoration: none;
+    color: #bfbf;  
+}
 
 .brand img {
     width: 45px;
