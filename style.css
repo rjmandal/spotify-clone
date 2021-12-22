@@ -48,16 +48,15 @@ nav ul li a{
 }
 
 .container {
-    min-height: 60vh;
+    min-height: 69vh;
     background-color:black;
     overflow: scroll;
     overflow-x: hidden;
     color: white;
     font-family: 'Scheherazade New', serif;
     display: flex;
-    margin: 23px auto;
+    margin: 5px auto;
     width: 95%;
-    border-radius: 12px;
     padding: 14px 34px;
 }
 .bottomImg{
@@ -138,7 +137,11 @@ nav ul li a{
     top: 20px;
     display: flex;
     align-items: center;
-}   
+}  
+footer{
+    position:absolute;
+    bottom: 0px;
+} 
 
 .rotate {
     animation: rotation 2s infinite linear;
