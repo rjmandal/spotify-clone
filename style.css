@@ -47,16 +47,21 @@ nav ul li a{
     font-size: 1.8rem;
 }
 
+nav ul li a{
+    text-decoration: none;
+    color: #bfbf;  
+}
 .container {
-    min-height: 70.7vh;
+    font-family: 'Scheherazade New', serif;
     background-color:black;
+    color: white;
     overflow: scroll;
     overflow-x: hidden;
-    color: white;
-    font-family: 'Scheherazade New', serif;
     display: flex;
-    margin: 5px auto;
+    margin: 5px;
     width: 95%;
+    min-height:70.7vh;
+    max-height:73.3vh;
     padding: 14px 34px;
 }
 
@@ -72,12 +77,10 @@ nav ul li a{
     width: 84vw;
     cursor: pointer;
 }
-
 .songItemContainer {
     height: 300px;
     background-color: black;
     border-radius: 20px;
-    padding: 10px;
 }
 
 .songItem {
@@ -121,11 +124,12 @@ nav ul li a{
     display: flex;
     align-items: center;
 }  
-.bottomImg{
+
+/* .bottomImg{
     height: 435px;
     position: relative;
     left: 240px;
-}
+} */
 
 footer {
     position: fixed;
