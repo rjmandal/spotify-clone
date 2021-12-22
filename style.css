@@ -50,7 +50,8 @@ nav ul li a{
 .container {
     min-height: 60vh;
     background-color:black;
-    /* background-image: url(spotify.png); */
+    overflow: scroll;
+    overflow-x: hidden;
     color: white;
     font-family: 'Scheherazade New', serif;
     display: flex;
@@ -91,18 +92,13 @@ nav ul li a{
 }
 
 .songItemContainer {
-    margin-top: 24px;
-    overflow: scroll;
     height: 300px;
-    scroll-behavior: smooth;
     background-color: black;
     border-radius: 20px;
     padding: 10px;
-    border: 10px solid white;
 }
 
 .songItem {
-    /* width: 70%; */
     height: 63px;
     display: flex;
     background-color: white;
