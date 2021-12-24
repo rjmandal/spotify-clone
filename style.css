@@ -8,29 +8,21 @@ body {
     margin: 0;
     padding: 0;
 }
-
-nav {
-    justify-content: center;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-}
-
 nav ul {
-    /* position: fixed; */
-    margin: 0;
-    /* width: 100%; */
     background-color: #040404;
-    color: #bfbf;
     height: 64px;
     display: flex;
     align-items: center;
     list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #bfbf;
+    font-size: 1.2rem;
+    font-weight:700;
 }
 
 nav ul li {
     padding: 0px 45px;
-    font-size: 1.2rem;
-    font-weight:700;
+  
 }
 /* nav ul li a{
     text-decoration: none;
@@ -99,9 +91,9 @@ text-align: center;
     color:#bfbf;
 }
 .songItemContainer {
-   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
     height: 0px; 
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
     border-radius: 20px;
 }
 
@@ -110,7 +102,6 @@ text-align: center;
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-color: white;
     color: black;
     font-weight: bold;
     background-color: #BEBDBD;
@@ -131,9 +122,9 @@ text-align: center;
 .timeStamp {
     display: flex;
 }
-/* .songName{
-    
-} */
+.songName{
+    line-height: 1.2;
+}
 .timeStamp i {
     cursor: pointer;
     margin-left: 10px;

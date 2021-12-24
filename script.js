@@ -117,6 +117,16 @@ let songs = [
         filePath: "songs/8.mp3",
         coverPath: "cover/8.jpg"
     },
+    {
+        songName: "Treat you better -Shawn Mendes",
+        filePath: "songs/8.mp3",
+        coverPath: "cover/8.jpg"
+    },
+    {
+        songName: "Treat you better -Shawn Mendes",
+        filePath: "songs/8.mp3",
+        coverPath: "cover/8.jpg"
+    },
 ]
 // *******************************************************************************************
 songItems.forEach((element,i)=>{
