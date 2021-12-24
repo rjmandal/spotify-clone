@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
 }
-nav ul {
+/* nav ul {
     background-color: #040404;
     height: 64px;
     display: flex;
@@ -24,10 +24,16 @@ nav ul li {
     padding: 0px 45px;
   
 }
-/* nav ul li a{
+
+nav ul li a{
     text-decoration: none;
     color: #bfbf;  
 } */
+
+.middleContainer {
+    display: flex;
+    min-height: 84.8vh;
+}
 
 .brand img {
     width: 45px;
@@ -42,14 +48,6 @@ nav ul li {
     font-size: 1.8rem;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: #bfbf;  
-}
-.middleContainer{
-display: flex;
-min-height:84.8vh;
-}
 .wrapper{
 width: 37%;
 background-color:#252325;
