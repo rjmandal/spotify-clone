@@ -40,7 +40,7 @@ nav a{
     padding: 0px 10px;
 }
 .wrapper{
-width: 35%;
+width: 40%;
 background-color:#252325;
 }
 .menu ul li{
@@ -55,6 +55,9 @@ background-color:#252325;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight:700;
+}
+.menu li a i{
+   padding:0px 10px; 
 }
 .middleContainer {
     display: flex;

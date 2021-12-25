@@ -55,37 +55,37 @@ let songs = [
     {
         songName: "See you again",
         filePath: "songs/10.mp3",
-        coverPath: "cover/8.jpg"
+        coverPath: "cover/10.jpg"
     },
     {
         songName: "Stay",
         filePath: "songs/11.mp3",
-        coverPath: "cover/8.jpg"
+        coverPath: "cover/11.jpg"
     },
     {
         songName: "Grind",
         filePath: "songs/12.mp3",
-        coverPath: "cover/8.jpg"
+        coverPath: "cover/12.jpg"
     },
     {
         songName: "Teri aankhon mein",
         filePath: "songs/13.mp3",
-        coverPath: "cover/8.jpg"
+        coverPath: "cover/13.jpg"
     },
     {
         songName: "Tum kun chale aate ho",
         filePath: "songs/14.mp3",
-        coverPath: "cover/8.jpg"
+        coverPath: "cover/14.jpg"
     },
     {
-        songName: "Treat you better -Shawn Mendes",
-        filePath: "songs/14.mp3",
-        coverPath: "cover/8.jpg"
+        songName: "Kina chir",
+        filePath: "songs/15.mp3",
+        coverPath: "cover/15.webp"
     },
     {
-        songName: "Treat you better -Shawn Mendes",
-        filePath: "songs/8.mp3",
-        coverPath: "cover/8.jpg"
+        songName: "Chand se parda",
+        filePath: "songs/16.mp3",
+        coverPath: "cover/16.jpg"
     },
     {
         songName: "Treat you better -Shawn Mendes",
