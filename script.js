@@ -88,19 +88,19 @@ let songs = [
         coverPath: "cover/16.jpg"
     },
     {
-        songName: "Treat you better -Shawn Mendes",
-        filePath: "songs/8.mp3",
-        coverPath: "cover/8.jpg"
+        songName: "Santa claus",
+        filePath: "songs/17.mp3",
+        coverPath: "cover/17.jpg"
     },
     {
         songName: "Treat you better -Shawn Mendes",
-        filePath: "songs/8.mp3",
-        coverPath: "cover/8.jpg"
+        filePath: "songs/18.crdownload",
+        coverPath: "cover/18.jpg"
     },
     {
         songName: "Treat you better -Shawn Mendes",
-        filePath: "songs/8.mp3",
-        coverPath: "cover/8.jpg"
+        filePath: "songs/19.mp3",
+        coverPath: "cover/19.jpg"
     },
     {
         songName: "Treat you better -Shawn Mendes",
