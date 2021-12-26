@@ -51,17 +51,20 @@ background-color:#252325;
 }
 .menu li a{
     font-family: 'Montserrat', sans-serif;
-    color: #bfbf;
+    color: white;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight:700;
+}
+.menu li  :hover{
+color: #bfbf;
 }
 .menu li a i{
    padding:0px 10px; 
 }
 .middleContainer {
     display: flex;
-    min-height: 75.7vh;
+    min-height: 78.7vh;
 }
 .container {
     font-family: 'Scheherazade New', serif;
@@ -81,7 +84,7 @@ background-color:#252325;
 }
 
 #myProgressBar {
-    width: 84vw;
+    width: 97%;
     cursor: pointer;
     color:#bfbf;
 }
@@ -125,30 +128,26 @@ background-color:#252325;
     margin-left: 10px;
 }
 .songInfo img{
-    width: 75px;
-    margin: 0 20px;
-    border-radius: 38px;
+    width: 85px;
+    margin: 0 10px;
+    border-radius: 18px;
 }
 .songInfo{
-    font-family: 'Scheherazade New', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    color: #bfbf;
     position: absolute;
-    left: 0vw;
-    top: 20px;
-    display: flex;
-    align-items: center;
+    left: 1vw;
+    top: -45px;
+    /* display: flex;
+    align-items: center; */
 }  
-
-/* .bottomImg{
-    height: 435px;
-    position: relative;
-    left: 240px;
-} */
-
 footer {
     position: fixed;
     bottom: 0px;
     width: 100%;
-    height: 110px;
+    height: 90px;
     background-color:black;
     color: #bfbf;
     display: flex;
@@ -157,7 +156,7 @@ footer {
     align-items: center;
 }
 
-.rotate {
+/* .rotate {
     animation: rotation 2s infinite linear;
 }
 
@@ -168,4 +167,4 @@ footer {
     to {
       transform: rotate(359deg);
     }
-  }
+  } */

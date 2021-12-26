@@ -1,6 +1,7 @@
 // variable diclaration *********************************************
 let songIndex = 0;
 let audioElement = new Audio("songs/1.mp3");
+let coverElement = new Image("cover/1.jpg");
 let cover = document.getElementById("cover");
 let masterPlay = document.getElementById("masterPlay");
 let masterSongName = document.getElementById("masterSongName");
@@ -80,7 +81,7 @@ let songs = [
     {
         songName: "Kina chir",
         filePath: "songs/15.mp3",
-        coverPath: "cover/15.webp"
+        coverPath: "cover/15.jpg"
     },
     {
         songName: "Chand se parda",
@@ -93,12 +94,12 @@ let songs = [
         coverPath: "cover/17.jpg"
     },
     {
-        songName: "Treat you better -Shawn Mendes",
-        filePath: "songs/18.crdownload",
+        songName: "Yalgaar",
+        filePath: "songs/18.mp3",
         coverPath: "cover/18.jpg"
     },
     {
-        songName: "Treat you better -Shawn Mendes",
+        songName: "Vardaan",
         filePath: "songs/19.mp3",
         coverPath: "cover/19.jpg"
     },
@@ -129,9 +130,9 @@ let songs = [
     },
 ]
 // *******************************************************************************************
-songItems.forEach((element,i)=>{
-    element.getElementsByTagName("img")[0].src=songs[i].coverPath;
-    element.getElementsByClassName("songName")[0].innerText=songs[i].songName;
+songItems.forEach((element, i) => {
+    element.getElementsByTagName("img")[0].src = songs[i].coverPath;
+    element.getElementsByClassName("songName")[0].innerText = songs[i].songName;
 })
 
 //******** */ handle play pause click for bottom ****************************************
@@ -159,35 +160,34 @@ myProgressBar.addEventListener("change", () => {
     audioElement.currentTime = myProgressBar.value * audioElement.duration / 100;
 });
 // ********************************************************************************
-const makeAllPlays = ()=>{
-    Array.from(document.getElementsByClassName("songItemPlay")).forEach((element)=>{
+const makeAllPlays = () => {
+    Array.from(document.getElementsByClassName("songItemPlay")).forEach((element) => {
         element.classList.remove("fa-pause-circle");
         element.classList.add("fa-play-circle");
     })
 }
 
-Array.from(document.getElementsByClassName("songItemPlay")).forEach((element)=>{
-    element.addEventListener("click",(e)=>{
+Array.from(document.getElementsByClassName("songItemPlay")).forEach((element) => {
+    element.addEventListener("click", (e) => {
         makeAllPlays();
         if (audioElement.paused || audioElement.currentTime <= 0) {
-            songIndex=parseInt(e.target.id);
-        e.target.classList.remove("fa-play-circle");
-        e.target.classList.add("fa-pause-circle");
-        audioElement.src=`songs/${songIndex+1}.mp3`;
-        masterSongName.innerText=songs[songIndex].songName;
-        audioElement.currentTime=0;
+            songIndex = parseInt(e.target.id);
+            e.target.classList.remove("fa-play-circle");
+            e.target.classList.add("fa-pause-circle");
+            audioElement.src = `songs/${songIndex + 1}.mp3`;
+            masterSongName.innerText = songs[songIndex].songName;
+            audioElement.currentTime = 0;
             audioElement.play();
             masterPlay.classList.remove("fa-play-circle");
             masterPlay.classList.add("fa-pause-circle");
-        } 
-        else   
-         {
-            songIndex=parseInt(e.target.id);
+        }
+        else {
+            songIndex = parseInt(e.target.id);
             e.target.classList.remove("fa-pause-circle");
             e.target.classList.add("fa-play-circle");
-            audioElement.src=`songs/${songIndex+1}.mp3`;
-            masterSongName.innerText=songs[songIndex].songName;
-            audioElement.currentTime=0;
+            audioElement.src = `songs/${songIndex + 1}.mp3`;
+            masterSongName.innerText = songs[songIndex].songName;
+            audioElement.currentTime = 0;
             audioElement.pause();
             masterPlay.classList.remove("fa-pause-circle");
             masterPlay.classList.add("fa-play-circle");
@@ -195,36 +195,35 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach((element)=>{
     })
 })
 // next and previous**********************************************************
-document.getElementById("next").addEventListener('click',()=>{
-if(songIndex>=8)
-{
-    songIndex=0;
-}
-else{
-    songIndex+=1;
-}
-audioElement.src=`songs/${songIndex+1}.mp3`;
-masterSongName.innerText=songs[songIndex].songName;
-audioElement.currentTime=0;
-audioElement.play();
-masterPlay.classList.remove("fa-play-circle");
-masterPlay.classList.add("fa-pause-circle");
+document.getElementById("next").addEventListener('click', () => {
+    if (songIndex >= 23) {
+        songIndex = 0;
+    }
+    else {
+        songIndex += 1;
+    }
+    audioElement.src = `songs/${songIndex + 1}.mp3`;
+    // coverElement.src = `cover/${songIndex + 1}.jpg`;
+    masterSongName.innerText = songs[songIndex].songName;
+    audioElement.currentTime = 0;
+    audioElement.play();
+    masterPlay.classList.remove("fa-play-circle");
+    masterPlay.classList.add("fa-pause-circle");
 });
 // ********************** previous
-document.getElementById("previous").addEventListener('click',()=>{
-if(songIndex<=0)
-{
-    songIndex=0;
-}
-else{
-    songIndex-=1;
-}
-audioElement.src=`songs/${songIndex+1}.mp3`;
-masterSongName.innerText=songs[songIndex].songName;
-audioElement.currentTime=0;
-audioElement.play();
-masterPlay.classList.remove("fa-play-circle");
-masterPlay.classList.add("fa-pause-circle");
+document.getElementById("previous").addEventListener('click', () => {
+    if (songIndex <= 0) {
+        songIndex = 0;
+    }
+    else {
+        songIndex -= 1;
+    }
+    audioElement.src = `songs/${songIndex + 1}.mp3`;
+    masterSongName.innerText = songs[songIndex].songName;
+    audioElement.currentTime = 0;
+    audioElement.play();
+    masterPlay.classList.remove("fa-play-circle");
+    masterPlay.classList.add("fa-pause-circle");
 })
 // ************************************************************************
 
