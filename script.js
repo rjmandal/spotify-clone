@@ -104,24 +104,24 @@ let songs = [
         coverPath: "cover/19.jpg"
     },
     {
-        songName: "Treat you better -Shawn Mendes",
-        filePath: "songs/8.mp3",
-        coverPath: "cover/8.jpg"
+        songName: "fallin for you",
+        filePath: "songs/20.mp3",
+        coverPath: "cover/20.jpg"
     },
     {
-        songName: "Treat you better -Shawn Mendes",
-        filePath: "songs/8.mp3",
-        coverPath: "cover/8.jpg"
+        songName: "yaad piya ki ane lagi",
+        filePath: "songs/21.mp3",
+        coverPath: "cover/21.jpg"
     },
     {
-        songName: "Treat you better -Shawn Mendes",
-        filePath: "songs/8.mp3",
-        coverPath: "cover/8.jpg"
+        songName: "Dil meri na sune",
+        filePath: "songs/22.mp3",
+        coverPath: "cover/22.jpg"
     },
     {
-        songName: "Treat you better -Shawn Mendes",
-        filePath: "songs/8.mp3",
-        coverPath: "cover/8.jpg"
+        songName: "Jugnu",
+        filePath: "songs/23.mp3",
+        coverPath: "cover/23.jpg"
     },
     {
         songName: "Treat you better -Shawn Mendes",
