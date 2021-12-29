@@ -1,7 +1,7 @@
 // variable diclaration *********************************************
 let songIndex = 0;
+let songItemPlay = Array.from(document.getElementsByClassName("songItemPlay"));
 let audioElement = new Audio("songs/1.mp3");
-let coverElement = new Image("cover/1.jpg");
 let cover = document.getElementById("cover");
 let masterPlay = document.getElementById("masterPlay");
 let masterSongName = document.getElementById("masterSongName");
@@ -141,12 +141,10 @@ masterPlay.addEventListener("click", () => {
         audioElement.play();
         masterPlay.classList.remove("fa-play-circle");
         masterPlay.classList.add("fa-pause-circle");
-        // cover.classList.add("rotate");
     } else {
         audioElement.pause();
         masterPlay.classList.remove("fa-pause-circle");
         masterPlay.classList.add("fa-play-circle");
-        // cover.classList.removeClass("rotate");
     }
 });
 
@@ -161,13 +159,13 @@ myProgressBar.addEventListener("change", () => {
 });
 // ********************************************************************************
 const makeAllPlays = () => {
-    Array.from(document.getElementsByClassName("songItemPlay")).forEach((element) => {
+    songItemPlay.forEach((element) => {
         element.classList.remove("fa-pause-circle");
         element.classList.add("fa-play-circle");
     })
 }
 
-Array.from(document.getElementsByClassName("songItemPlay")).forEach((element) => {
+songItemPlay.forEach((element) => {
     element.addEventListener("click", (e) => {
         makeAllPlays();
         if (audioElement.paused || audioElement.currentTime <= 0) {
@@ -175,6 +173,7 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach((element) =>
             e.target.classList.remove("fa-play-circle");
             e.target.classList.add("fa-pause-circle");
             audioElement.src = `songs/${songIndex + 1}.mp3`;
+            cover.src = `cover/${songIndex + 1}.jpg`;
             masterSongName.innerText = songs[songIndex].songName;
             audioElement.currentTime = 0;
             audioElement.play();
@@ -186,6 +185,7 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach((element) =>
             e.target.classList.remove("fa-pause-circle");
             e.target.classList.add("fa-play-circle");
             audioElement.src = `songs/${songIndex + 1}.mp3`;
+            cover.src = `cover/${songIndex + 1}.jpg`;
             masterSongName.innerText = songs[songIndex].songName;
             audioElement.currentTime = 0;
             audioElement.pause();
@@ -203,7 +203,7 @@ document.getElementById("next").addEventListener('click', () => {
         songIndex += 1;
     }
     audioElement.src = `songs/${songIndex + 1}.mp3`;
-    // coverElement.src = `cover/${songIndex + 1}.jpg`;
+    cover.src = `cover/${songIndex + 1}.jpg`;
     masterSongName.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
@@ -219,6 +219,7 @@ document.getElementById("previous").addEventListener('click', () => {
         songIndex -= 1;
     }
     audioElement.src = `songs/${songIndex + 1}.mp3`;
+    cover.src = `cover/${songIndex + 1}.jpg`;
     masterSongName.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
