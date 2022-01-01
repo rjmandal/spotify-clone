@@ -76,9 +76,9 @@ border: 4px solid rgba(232, 232, 240, 0.2);
 }
 .container {
     font-family: 'Scheherazade New', serif;
-    /* background-color:#514F50; */
     color: white;
     overflow-y: scroll;
+    scroll-behavior: smooth ;
 }
 .container h1 {
     padding-left: 14px;
