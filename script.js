@@ -35,6 +35,17 @@ let songs = [
     { songName: "Jugnu", filePath: "songs/23.mp3", coverPath: "cover/23.jpg" },
     { songName: "Treat you better -Shawn Mendes", filePath: "songs/8.mp3", coverPath: "cover/8.jpg" },
 ]
+// ***************************************************sidebar*********************
+let btn = document.querySelector("#btn");
+let sidebar = document.querySelector(".sidebar");
+let searchBtn = document.querySelector(".fa-search");
+
+btn.onclick = function () {
+    sidebar.classList.toggle("active");
+}
+searchBtn.onclick = function () {
+    sidebar.classList.toggle("active");
+}
 // *******************************************************************************************
 songItems.forEach((element, i) => {
     element.getElementsByTagName("img")[0].src = songs[i].coverPath;
