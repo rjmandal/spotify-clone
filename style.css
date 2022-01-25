@@ -392,3 +392,17 @@ footer {
      left:100px;
      width: 92%;
 } */
+
+@media screen and (max-width:1400px){
+    footer{
+        left: 83px;
+        width: 75%;
+    }
+    .sidebar{
+        display:hide;
+    }
+    .songItemContainer {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+}
