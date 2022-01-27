@@ -16,6 +16,8 @@ body {
     overflow: hidden;
      background-color: #1d1b31d7;
 }
+/* ************************navigation*************************************************
+********************************************************************* ***********/
 .navigation {
     /* position: fixed;
     width: 100%; */
@@ -55,6 +57,8 @@ nav a {
 .nav-right i {
     padding: 0px 20px;
 }
+/* ************************sidebar*************************************************
+********************************************************************* ***********/
 .sidebar {
     position: fixed;
     top:0;
@@ -110,6 +114,7 @@ nav a {
     text-align: center;
     line-height: 50px;
     transform: translateX(-50%);
+    
 }
 
 .sidebar.active #btn {
@@ -238,6 +243,7 @@ nav a {
     width: 45px;
     object-fit: cover;
     border-radius: 12px;
+    border: 4px solid rgba(232, 232, 240, 0.2);
 }
 
 .profile .profile_details .name_job {
@@ -283,14 +289,14 @@ nav a {
     left: 78px;
     transition: all 0.5s ease;
 }
-
-.home_content .text {
+/* ************************home content*************************************************
+********************************************************************* ***********/
+/* .home_content .text {
     font-size: 25px;
     font-weight: 500;
     color: #1d1b31;
     margin: 12px;
-}
-
+} */
 .sidebar.active~.home_content {
     width: calc(100% - 240px);
     left: 240px;
@@ -298,12 +304,13 @@ nav a {
 .middleContainer {
     display: flex;
     height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 .container {
     font-family: 'Scheherazade New', serif;
     color: white;
-    overflow-y: scroll;
-    scroll-behavior: smooth ;
+    
 }
 .container h1 {
     padding: 14px;
@@ -335,8 +342,26 @@ nav a {
     margin-bottom: 10px;
     border-radius: 18px;
 }
+/* ************************footer*************************************************
+********************************************************************* ***********/
+footer {
+    position: fixed;
+    bottom: 10px;
+    left: 14px;
+    width: 97%;
+    height: 80px;
+    background-color: #11101d;
+    border: 2px solid white;
+    border: 4px solid rgba(232, 232, 240, 0.6);
+    border-radius: 18px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .icons {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .icons i {
@@ -359,9 +384,10 @@ nav a {
     margin-left: 10px;
 }
 .songInfo img{
-    width: 85px;
-    margin: 0 10px;
-    border-radius: 18px;
+    width: 75px;
+    margin: 0 10px 0px 0px;
+    object-fit: cover;
+    border-radius: 35px;
     border: 4px solid rgba(232, 232, 240, 0.2);
 }
 .songInfo{
@@ -372,27 +398,9 @@ nav a {
     left: 1vw;
     top: -45px;
 }  
-footer {
-    position: fixed;
-    bottom: 10px;
-    left:14px;
-    width: 97%;
-    height: 80px;
-    background-color:#11101d;
-    border: 2px solid white;
-    border: 4px solid rgba(232, 232, 240, 0.6);
-    border-radius: 18px;
-    color:white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-/* .active footer{ 
-     left:100px;
-     width: 92%;
-} */
 
+/* ************************css for Phone*************************************************
+********************************************************************* ***********/
 @media screen and (max-width:1400px){
     footer{
         left: 5px;
