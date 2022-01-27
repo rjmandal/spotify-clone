@@ -203,7 +203,7 @@ nav a {
 .sidebar .profile_content {
     position: absolute;
     color: #fff;
-    bottom: 0;
+    bottom: 140px;
     left: 0;
     width: 100%;
 }
@@ -375,8 +375,8 @@ nav a {
 footer {
     position: fixed;
     bottom: 10px;
-    left:250px;
-    width: 82%;
+    left:14px;
+    width: 97%;
     height: 80px;
     background-color:#11101d;
     border: 2px solid white;
@@ -395,11 +395,7 @@ footer {
 
 @media screen and (max-width:1400px){
     footer{
-        left: 83px;
-        width: 75%;
-    }
-    .sidebar{
-        display:hide;
+        left: 5px;
     }
     .songItemContainer {
         grid-template-columns: repeat(1, 1fr);
