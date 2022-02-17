@@ -1,0 +1,22 @@
+{
+  "name": "musically",
+  "version": "1.0.0",
+  "description": "music app",
+  "main": "photo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjsanjaymandal/spotify-clone.git"
+  },
+  "author": "sanjay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rjsanjaymandal/spotify-clone/issues"
+  },
+  "homepage": "https://github.com/rjsanjaymandal/spotify-clone#readme",
+  "dependencies": {
+    "firebase": "^9.6.6"
+  }
+}
