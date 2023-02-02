@@ -139,3 +139,24 @@ previous.addEventListener('click', () => {
     masterPlay.classList.add("fa-pause-circle");
 })
 // *****************************auto run next********************************************
+
+audioElement.addEventListener("ended", () => {
+
+    if (songIndex >= 23) {
+        songIndex = 0;
+    }
+    else {
+        songIndex += 1;
+    }
+    audioElement.src = `songs/${songIndex + 1}.mp3`;
+    cover.src = `cover/${songIndex + 1}.jpg`;
+    masterSongName.innerText = songs[songIndex].songName;
+    audioElement.currentTime = 0;
+    audioElement.play();
+    masterPlay.classList.remove("fa-play-circle");
+    masterPlay.classList.add("fa-pause-circle");
+
+    
+
+}
+)

@@ -321,7 +321,7 @@ nav a {
     margin: 0px 30px 0px 15px; 
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr) 170px;
     column-gap:20px;
     row-gap: 20px;
 }
