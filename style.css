@@ -406,8 +406,11 @@ footer {
         left: 5px;
     }
     .songItemContainer {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+    }
+    .bottom-space{
+        height: 150px;
     }
     .songName {
         display: none;
